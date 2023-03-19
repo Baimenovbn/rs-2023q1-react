@@ -1,3 +1,14 @@
+import { SearchBar } from '../../components';
+import { useCallback } from 'react';
+
 export default function MainPage() {
-  return <h1>Main Page</h1>;
+  const search = useCallback((searchValue: string) => {
+    console.log(searchValue);
+  }, []);
+
+  return (
+    <div>
+      <SearchBar search={search} />
+    </div>
+  );
 }
