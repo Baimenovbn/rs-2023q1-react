@@ -20,7 +20,7 @@ export interface CardModelView {
 }
 
 export const Card = ({ img, title, addedBy, journalName, whoAdded }: CardModelView) => (
-  <CardWrapper>
+  <CardWrapper data-testid="card-list-item">
     <CardImg src={img} alt={title} />
     <InfoWrapper>
       <div>

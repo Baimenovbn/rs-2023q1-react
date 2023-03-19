@@ -5,7 +5,7 @@ export const CARD_LIST_STUB: CardModelView[] = [
   {
     id: '1',
     img,
-    whoAdded: [img, img],
+    whoAdded: [img, img, img, img],
     addedBy: 'Awwards',
     journalName: 'Articles',
     title: 'first card example',

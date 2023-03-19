@@ -21,8 +21,8 @@ export const ThumbList = styled.ul`
 
 export const RsThumbList = ({ thumbList }: PropsWithChildren<{ thumbList: string[] }>) => (
   <ThumbList>
-    {thumbList.slice(3).map((imgLink, id) => (
-      <ThumbWrapper key={id}>
+    {thumbList.slice(0, 4).map((imgLink, id) => (
+      <ThumbWrapper data-testid="card-thumb" key={id}>
         <ThumbImg src={imgLink} alt="thumb" />
       </ThumbWrapper>
     ))}

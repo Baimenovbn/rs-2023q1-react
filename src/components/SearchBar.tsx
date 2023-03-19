@@ -109,7 +109,9 @@ export default class SearchBar extends Component<Props, State> {
               type="text"
             />
           </SearchBarInputWrapper>
-          <SearchBarButton onClick={this.search}>SEARCH</SearchBarButton>
+          <SearchBarButton data-testid="search-button" onClick={this.search}>
+            SEARCH
+          </SearchBarButton>
         </Wrapper>
       </Card>
     );

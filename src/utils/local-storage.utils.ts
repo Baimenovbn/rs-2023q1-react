@@ -3,7 +3,7 @@ export enum LOCAL_STORAGE_KEYS {
 }
 
 export class LocalStorageUtils {
-  static GetValueByKey<ValueType>(key: LOCAL_STORAGE_KEYS, defaultValue: ValueType) {
+  static GetValueByKey<ValueType>(key: LOCAL_STORAGE_KEYS | string, defaultValue: ValueType) {
     try {
       const item = localStorage.getItem(key);
       if (item) {
@@ -16,7 +16,7 @@ export class LocalStorageUtils {
     return defaultValue;
   }
 
-  static SetValueByKey<T>(key: LOCAL_STORAGE_KEYS, value: T) {
+  static SetValueByKey<T>(key: LOCAL_STORAGE_KEYS | string, value: T) {
     return localStorage.setItem(key, JSON.stringify(value));
   }
 }
