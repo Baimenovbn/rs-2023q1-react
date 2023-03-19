@@ -32,3 +32,13 @@ a:visited {
 a:hover {
   color: var(--main-blue);
 }
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: .7;
+}
